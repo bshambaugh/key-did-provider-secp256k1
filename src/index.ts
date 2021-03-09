@@ -11,11 +11,11 @@ import {
 import stringify from 'fast-json-stable-stringify'
 import * as u8a from 'uint8arrays'
 import { ec as EC } from 'elliptic'
-import multicodec from 'multicodec' 
+import multicodec from 'multicodec'
 
 const ec = new EC('secp256k1')
 
-console.log(multicodec)
+//console.log(multicodec)
 
 function toStableObject(obj: Record<string, any>): Record<string, any> {
   return JSON.parse(stringify(obj)) as Record<string, any>
